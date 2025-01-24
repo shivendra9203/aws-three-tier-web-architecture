@@ -1,9 +1,9 @@
- AWS Three-Tier Web Architecture
+## AWS Three-Tier Web Architecture
                                                           
-Description
+# Description
 This repository provides a hands-on walkthrough for setting up a scalable, highly available three-tier web architecture using AWS services. The tutorial focuses on manually creating the essential components, including network, security, application, and database layers, to deploy a complete web application in AWS.
 
-Audience
+# Audience
 This guide is intended for technical professionals with a foundational understanding of AWS services, including:
 
 VPC: Virtual Private Cloud
@@ -13,7 +13,7 @@ S3: Simple Storage Service
 ELB: Elastic Load Balancer
 AWS Management Console: Interface for managing AWS services
 
-Prerequisites
+# Prerequisites
 To get the most out of this tutorial, you should be familiar with the following concepts:
 
 Setting up a VPC in AWS
@@ -24,7 +24,7 @@ Setting up ELBs
 Navigating the AWS Management Console
 
 
-Architecture Overview
+# Architecture Overview
 You can follow this image to create a web-architecture
 
 ![image](https://github.com/user-attachments/assets/fa4b0d0d-a29b-42a2-a33d-ffd66d4fd18b)
@@ -35,7 +35,7 @@ Web Tier: A load-balanced EC2 instance running a web application.
 Application Tier: EC2 instances or Lambda functions that process business logic.
 Database Tier: A managed RDS instance to store data.
 
-Components:
+# Components:
 VPC: Create a custom VPC to securely isolate the environment.
 Subnets: Use public and private subnets to ensure proper isolation and security.
 Security Groups: Define rules to control access between components.
@@ -44,7 +44,7 @@ EC2 Instances: Host the web application and business logic.
 RDS: Manage the database that the application relies on.
 S3: Store static content (such as images, CSS, JS).
 
-Getting Started
+# Getting Started
 1. Set up VPC and Subnets
 Create a custom VPC with public and private subnets. Assign appropriate route tables and ensure your private subnets have proper access to the internet (via NAT gateway).
 
@@ -66,11 +66,11 @@ Upload any static content (e.g., images, videos) to S3 and configure the EC2 ins
 7. Scaling & High Availability
 Use Auto Scaling Groups for the web and application tiers to ensure high availability and scalability.
 
-Usage
+# Usage
 Follow the steps in the walkthrough to deploy and test the architecture in your AWS environment.
 
-Contributing
+# Contributing
 Feel free to fork the repository, submit issues, and open pull requests. Contributions are welcome!
 
-License
+# License
 This project is licensed under the MIT License.
